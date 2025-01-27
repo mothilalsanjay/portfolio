@@ -1,0 +1,176 @@
+.social {
+  color: white !important;
+  font-size: 1.5rem;
+  box-shadow: 2px 10px 30px blue; /* Blue glow effect */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social:hover {
+  transform: scale(1.2);
+  text-shadow: 0px 5px 20px 0 yellow;
+  box-shadow: 0px 5px 15px yellow; 
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    /* Background Dot Animation */
+    #home {
+      background-size: 30px 30px; /* Smaller dot spacing for compact screens */
+      animation: moveDots 10s linear infinite; /* Slower animation for better performance on small screens */
+    }
+  
+    /* Adjusting Home Section */
+    .home1 {
+      padding-top: 5rem; /* Adds more padding on top for spacing */
+    }
+  
+    /* Reducing Font Size for Header */
+    #home h1 {
+      font-size: 1.5rem; /* Smaller font size for smaller screens */
+      text-align: center; /* Center-align text */
+    }
+  
+    /* Adjusting Homes Section Padding */
+    .homes {
+      padding: 20px; /* Adds padding for better spacing around content */
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .social {
+      width: 70%;
+
+    }
+    /* Adjust Font Size and Line Height for Service Paragraph */
+    #services p {
+      font-size: 1rem; /* Smaller font size */
+      line-height: 1.5; /* Better line height for readability */
+    }
+  
+    /* Adjust Service Bottom Layout for Mobile */
+    #services .service-bottom {
+      display: flex;
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center; /* Center-align the items */
+    }
+  
+    /* Hover Effect on Service Items */
+    .service-item:hover {
+      transform: translateY(-10px); /* Lift effect on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    }
+    #projects .project-info h1{
+        font-size: 1.5rem;
+    }
+  
+    #about .about {
+      flex-direction: column-reverse;
+  }
+
+  #about .col-right h2{
+    font-size: 1.5rem;
+  }
+  #about .col-right h1{
+    margin-top:-50px;
+  }
+  
+  #about .col-right p{
+    font-size: 1rem;
+    line-height:1;
+  }
+  #about .col-right p span{
+    font-size: 1rem;
+    line-height:1.2;
+  }
+  #about .col-right .cta {
+    color: black;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+  #footer h1 {
+    font-size: 1.5rem;
+  }
+
+  #footer p{
+    font-size: 0.8rem;
+  }
+  }
+  
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+   /* End Project  */
+
+   /* contact   */
+    #contact .contact {
+       flex-direction: column;
+       padding: 100px 0;
+       align-items: center;
+       justify-content: center;
+       min-width: 20vh;
+   }
+   #contact .contact-items {
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+       margin: 0;
+   }
+   #contact .contact-item {
+       width: 30%;
+       margin: 0;
+       flex-direction: row;
+   }
+   #contact .contact-item .icon {
+       height: 100px;
+       width: 100px;
+   }
+   #contact .contact-item .icon img {
+       object-fit: contain;
+   }
+   #contact .contact-item .contact-info {
+       width: 100%;
+       text-align: left;
+       padding-left: 20px;
+   } 
+    /* End contact  */
+} */
+/* End Media Query For Tablet */
